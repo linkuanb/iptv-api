@@ -51,7 +51,6 @@ other features, under development...
     - [Docker](#docker)
 - [📖 Detailed Tutorial](./docs/tutorial_en.md)
 - [🗓️ Changelog](./CHANGELOG.md)
-- [❤️ Donations](#donations)
 - [👀 Follow](#follow)
 - [⭐️ Star History](#star-history)
 - [📣 Disclaimer](#disclaimer)
@@ -82,7 +81,7 @@ other features, under development...
 
 ## Core Features
 
-| Feature                               | Status | Description                                                                                                                         |
+| Feature                               |状态|描述|
 |:--------------------------------------|:------:|:------------------------------------------------------------------------------------------------------------------------------------|
 | **Custom Templates**                  |   ✅    | Generate personalized channels as you wish                                                                                          |
 | **Channel Alias**                     |   ✅    | Improves channel result coverage and accuracy, supports regular expressions                                                         |
@@ -135,7 +134,7 @@ https://raw.githubusercontent.com/Guovin/iptv-api/gd/source.json
 > The following configuration items are located in `config/config.ini` and can be modified via the configuration file or
 > environment variables. Save changes and restart to apply.
 
-| Configuration Item     | Description                                                                                                                                                                                                                                                                                                                                                          | Default Value     |
+| Configuration Item     |描述| Default Value     |
 |:-----------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------|
 | open_update            | Enable updates, used to control whether to update interfaces. If disabled, all working modes (getting interfaces and speed tests) stop.                                                                                                                                                                                                                              | True              |
 | open_empty_category    | Enable empty category, channels without results will automatically be classified to the bottom.                                                                                                                                                                                                                                                                      | False             |
@@ -314,7 +313,7 @@ docker run -d -p 5180:5180 guovern/iptv-api
 
 **Environment Variables:**
 
-| Variable        | Description             | Default Value |
+| Variable        |描述| Default Value |
 |:----------------|:------------------------|:--------------|
 | APP_PORT        | Service port            | 5180          |
 | NGINX_HTTP_PORT | Nginx HTTP service port | 8080          |
@@ -340,7 +339,7 @@ Mount output directory:
 
 ##### 3. Update Results
 
-| Endpoint        | Description                                     |
+| Endpoint        |描述|
 |:----------------|:------------------------------------------------|
 | /               | Default endpoint                                |
 | /m3u            | m3u format endpoint                             |
@@ -366,7 +365,7 @@ Mount output directory:
      corresponding channels.
 > 4. Visit `http://127.0.0.1:8080/stat` to view real-time streaming status and statistics.
 
-| Streaming Endpoint | Description                         |
+| Streaming Endpoint |描述|
 |:-------------------|:------------------------------------|
 | /hls               | hls streaming endpoint              |
 | /hls/txt           | hls txt streaming endpoint          |
@@ -382,29 +381,15 @@ Mount output directory:
 
 [Changelog](./CHANGELOG.md)
 
-## Follow
+##关注
 
 ### GitHub
 
 Follow my GitHub account [Guovin](https://github.com/Guovin) to find more useful projects
 
-### WeChat public account
-
-WeChat public account search for Govin, or scan the code to receive updates and learn more tips:
-
-![Wechat public account](./static/images/qrcode.jpg)
-
 ## Star History
 
 [![Star History Chart](https://starchart.cc/Guovin/iptv-api.svg?variant=adaptive)](https://starchart.cc/Guovin/iptv-api)
-
-## Donations
-
-<div>Development and maintenance are not easy, please buy me a coffee ~</div>
-
-| Alipay                                | Wechat                                    |
-|---------------------------------------|-------------------------------------------|
-| ![Alipay](./static/images/alipay.jpg) | ![Wechat](./static/images/appreciate.jpg) |
 
 ## Disclaimer
 
